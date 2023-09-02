@@ -1,0 +1,109 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+html, body, #root {
+  font-size: 16px;
+
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  background-image: linear-gradient(#c664ed, #ed647b);
+}
+
+.chat-window {
+  padding: 1rem;
+
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.chat-window .message {
+  padding: 4px;
+
+  background-color: #fccbd3;
+  box-shadow: 0px 0px 8px #f791a2;
+  border-radius: 3px;
+}
+
+.chat-window .text-input {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.chat-window .text-input input {
+  flex: 1;
+  padding: 8px;
+
+  border-style: none;
+  border-radius: 15px;
+
+  outline: none;
+}
+
+.chat-window .text-input button {
+  width: 2rem;
+  height: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.chat-window .text-input button:hover {
+  box-shadow: 0px 0px 8px #f791a2;
+}
+
+.chat-window .text-input button .icon{
+  color: #ed647b;
+}
+
+.notification {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+
+  transition: ease-in-out, 0.3s;
+}
+
+.inactive {
+  top: -10rem;
+}
+
+.active {
+  top: 1rem;
+}
+
+.notification-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: rgb(46, 141, 22);
+  background-color: white;
+
+  padding: 0.25rem 1rem;
+
+  font-size: 0.75rem;
+
+  border-radius: 5px;
+}
